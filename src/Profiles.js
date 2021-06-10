@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, NavLink, Route } from 'react-router-dom'
 import Profile from './Profile'
+import RouterHoocSample from './RouterHookSample'
 import WithRouterSample from './WithRouterSample'
 
 const Profiles = () => {
@@ -39,6 +40,7 @@ const Profiles = () => {
             />
             <Route path="/profiles/:username" component={Profile} />
             <WithRouterSample />
+            <RouterHoocSample />
         </div>
     );
 };
